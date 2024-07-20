@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!--MENU ENCABEZADO-->
+    <div class="contenedor-header">
+        <header>
+                <div class="logo">
+                    <a href="#">Iván</a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive"onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+        </header>
+    </div>
+
+    <!--seccion inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/imagenPerfil.jpg" alt="">
+            </div>
+            <h1>Iván Baigorria</h1>
+            <h2>Programador</h2>
+            
+            <div class="redes">
+                <!--<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>-->
+                <a href="https://www.linkedin.com/in/ivanbaigorria/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/IvanBaigorria"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p><span>Hola, soy Iván Baigorria.</span> Soy programador en c#, estudiante de la Tecnicatura superior en programacion universitaria en la Universidad Tecnologica Nacional de Pacheco, actualmente me encuentro trabajando como Soporte Tecnico.  </p>
+            <div class="fila">
+
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Email</strong>
+                            ivann.baigorria@gmail.com
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <strong>Ubicación</strong>
+                            Buenos Aires, Argentina
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <strong>Cargo</strong>
+                            Freelance
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-computer"></i>
+                            <span>PC's</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>FUTBOL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                <!--<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>-->
+                <a> Descargar cv</a> 
+                <a class="fa-solid fa-download" href="https://drive.google.com/file/d/17YDSjmFLKtqOtytXmf5Ftje9DuXjYfXH/view?usp=sharing"></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+
+    </section>
+    <!--SECCION SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--TECHNICAL SKILLS}-->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                        <span>.NET</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                        <span>SQL SERVER</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PROFESSIONAL SKILL-->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--SECCION CURRICULUM-->
+    <section class="curriculum" id="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda"></div>
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4>Tecnicatura superior en programacion</h4>
+                        <span class="casa">UTN</span>
+                        <span class="fecha">2023 - actualidad</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                        <h4>Tester QA</h4>
+                        <span class="casa">UTN</span>
+                        <span class="fecha">2024</span>
+                        <p>38 horas, certificado, se realizo trabajo final.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                        <h4>Curso C# nivel 1</h4>
+                        <span class="casa">MAXIPROGRAMA</span>
+                        <span class="fecha">2024</span>
+                        <p>40 horas, certificado, se realizo evaluacion final.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                        <h4>Curso C# nivel 2 [.NET – POO –
+                            SQL] </h4>
+                        <span class="casa">MAXIPROGRAMA</span>
+                        <span class="fecha">2024</span>
+                        <p>40 horas, certificado, se realizo un trabajo final.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                        <h4>Curso C# nivel 3[ASP .NET WebForms]</h4>
+                        <span class="casa">MAXIPROGRAMA</span>
+                        <span class="fecha">2024</span>
+                        <p>40 horas, trabajo final en proceso.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Soporte Técnico</h4>
+                        <span class="casa">Ecorp S.A</span>
+                        <span class="fecha">2024 - actualidad</span>
+                        <p>Tareas de soporte de PC, internet, impresoras. Tanto de hardware como software.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--SECCION PORTAFOLIO-->
+    <section class="portfolio" id="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO-->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <img src="img/mapa.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>Buenos Aires, Argentina.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile"></i>+541132079039.
+                                
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>ivann.baigorria@gmail.com.                                
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+           <!-- <a href="#"><i class="fa-brands fa-facebook-f"></i></a>-->
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>      
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
