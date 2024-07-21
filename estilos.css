@@ -649,7 +649,7 @@ opacity: 1;
 
 .contacto .col input, .contacto .col textarea{
     display: block;
-    width: 100%;
+    width: 99%;
     padding: 18px;
     border: none;
     margin-bottom: 20px;
@@ -663,12 +663,13 @@ opacity: 1;
     border: 2px solid white;
     width: fit-content;
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 10px 22px;
     font-size: 16px;
     color: white;
     position: relative;
-    z-index: 10;
+    z-index: 8;
+    
 }
 
 .contacto button .overlay{
@@ -691,11 +692,11 @@ opacity: 1;
 }
 
 .contacto .col .info{
-    position:absolute;
-    top: 40%;
+    position:relative;
+    top: 7%;
     background-color: #252A2E;
-    padding: 40px;
-    max-width: 360px;
+    padding: 25px;
+    max-width: 400px;
     left: 50%;
     transform: translate(-50%, -50%);
     }
@@ -704,13 +705,13 @@ opacity: 1;
 }
 
 .contacto .col .info ul li{
-    margin-bottom: 30px;
+    margin-bottom: 1px;
 }
 
 .contacto .col .info ul li i{
 color: #1cb698;
 display: inline-block;
-margin-right: 10px;
+margin-right: 20px;
 }
 
 /*seccion footer*/
